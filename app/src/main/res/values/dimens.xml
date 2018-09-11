@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Created by Kei Lazu on 9/11/2018
+  check https://github.com/KeiLazu for more
+-->
+
+<resources>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="height_list">120dp</dimen>
+    <dimen name="default_title">24sp</dimen>
+    <dimen name="default_subtitle">18sp</dimen>
+    <dimen name="default_containersub">14sp</dimen>
+    <dimen name="default_width_cosntraint">0dp</dimen>
+    <dimen name="default_margin_sub">4dp</dimen>
+    <dimen name="width_list">160dp</dimen>
+</resources>

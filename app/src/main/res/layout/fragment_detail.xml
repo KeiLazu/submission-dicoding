@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/detail_img_place"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:contentDescription="@string/content_image" />
+
+            <TextView
+                android:id="@+id/detail_tv_title"
+                style="@style/textDetailPlacesName"
+                android:layout_width="@dimen/default_width_cosntraint"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_img_place" />
+
+            <TextView
+                style="@style/textDetailTitleSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_tv_title"
+                android:text="@string/country"
+                android:id="@+id/detail_tv_country"
+                />
+
+            <TextView
+                style="@style/textDetailSubtitleSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_tv_country"
+                android:id="@+id/detail_tv_country_output"
+                />
+
+            <TextView
+                style="@style/textDetailTitleSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_tv_country_output"
+                android:text="@string/desc"
+                android:id="@+id/detail_tv_desc"
+                />
+
+            <TextView
+                style="@style/textDetailSubtitleSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detail_tv_desc"
+                android:id="@+id/detail_tv_desc_output"
+                />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

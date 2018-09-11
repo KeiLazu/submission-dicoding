@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Created by Kei Lazu on 
+  check https://github.com/KeiLazu for more
+-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/list_item_lv_iv_images"
+        android:layout_width="@dimen/width_list"
+        android:layout_height="@dimen/height_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/content_image"
+        />
+
+    <View
+        android:layout_width="@dimen/width_list"
+        android:layout_height="@dimen/height_list"
+        android:background="@drawable/list_item_shadow_pic"
+        />
+
+    <TextView
+        android:id="@+id/list_item_lv_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        style="@style/textDashboardPlacesName"
+        android:text="Palembang"
+        />
+
+</android.support.constraint.ConstraintLayout>

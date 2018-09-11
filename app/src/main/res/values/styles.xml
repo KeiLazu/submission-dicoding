@@ -8,4 +8,31 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="textDashboardPlacesName">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pureWhite</item>
+        <item name="android:textSize">@dimen/default_title</item>
+    </style>
+
+    <style name="textDetailPlacesName" parent="textDashboardPlacesName">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="textDetailTitleSection">
+        <item name="android:textSize">@dimen/default_subtitle</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">@dimen/default_width_cosntraint</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_marginStart">@dimen/default_margin</item>
+        <item name="android:layout_marginEnd">@dimen/default_margin</item>
+    </style>
+
+    <style name="textDetailSubtitleSection" parent="textDetailTitleSection">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/default_containersub</item>
+        <item name="android:layout_marginTop">@dimen/default_margin_sub</item>
+    </style>
+
 </resources>
